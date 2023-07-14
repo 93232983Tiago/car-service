@@ -1,11 +1,14 @@
 import React from "react";
-import { Text } from "react-native";
-import { Container } from './styles';
+import { Text, Image } from "react-native";
+import { Container, LoadingIcon, Teslapng } from './styles';
+
+import Carlogo from '../../../assets/carrepair.svg'
 
 export default () => {
     return(
         <Container>
-            <Text>Preload</Text>
-        </Container>    
+            <Carlogo width="100%" height="150" fill="#FFF"/>
+            <LoadingIcon size="large" color="#FFF"/>
+        </Container>   
     );
 }
